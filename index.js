@@ -16,11 +16,13 @@ function submitData(name, email) {
     return response.json();
   })
   .then(function(object) {
-    let h = document.createElement("H1");
-    h.innerHTML = object.id;
-    document.querySelector("body").appendChild(h);
+    let p = document.createElement("p");
+    p.innerHTML = object.id;
+    document.querySelector("body").appendChild(p);
   })
   .catch(function(error) {
+    let h = document.createElement("H1").innerHTML = "Unauthorized Access";
+    document.body.appendChild(h);
     alert("Unauthorized Access");
     console.log(error.message);
   });
