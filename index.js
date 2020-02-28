@@ -12,5 +12,5 @@ let configObj = {
 };
 
 function submitData(userName, userEmail) {
-  return fetch(url)
+  return fetch(url, configObj)
 }
