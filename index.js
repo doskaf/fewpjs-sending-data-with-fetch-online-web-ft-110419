@@ -17,7 +17,7 @@ function submitData(userName, userEmail) {
   })
   .then(function(object) {
     let h = document.createElement("H1");
-    h.innerText = object.id;
+    h.innerHTML = object.id;
     document.querySelector("body").appendChild(h);
   })
 }
