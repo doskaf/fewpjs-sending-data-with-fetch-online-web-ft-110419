@@ -6,7 +6,8 @@ let configObj = {
     "Accept": "application/json"
   },
   body: JSON.stringify({
-    name: 
+    name: userName,
+    email: userEmail
   })
 };
 
