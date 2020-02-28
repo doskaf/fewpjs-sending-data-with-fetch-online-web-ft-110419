@@ -20,4 +20,5 @@ function submitData(name, email) {
     h.innerHTML = object.id;
     document.querySelector("body").appendChild(h);
   })
+  
 }
