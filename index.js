@@ -20,5 +20,8 @@ function submitData(name, email) {
     h.innerHTML = object.id;
     document.querySelector("body").appendChild(h);
   })
-  
+  .catch(function(error) {
+    alert("Something went wrong!");
+    console.log(error.message);
+  });
 }
