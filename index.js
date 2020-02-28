@@ -17,6 +17,6 @@ function submitData(userName, userEmail) {
   })
   .then(function(object) {
     let h = document.createElement("h1");
-    h.innerText = object[id];
+    h.innerText = object.id;
   })
 }
