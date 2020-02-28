@@ -1,18 +1,19 @@
-let url = "http://localhost:3000/users";
-let configObj = {
-  method: "POST",
-  headers: {
-    "Content-Type": "application/json",
-    "Accept": "application/json"
-  },
-  body: JSON.stringify({
-    name: userName,
-    email: userEmail
-  })
-};
+let url = ;
 
 function submitData(userName, userEmail) {
-  return fetch(url, configObj)
+  let configObj = {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+      "Accept": "application/json"
+    },
+      body: JSON.stringify({
+      name: userName,
+      email: userEmail
+    })
+  };
+
+  return fetch("http://localhost:3000/users", configObj)
   .then(function(response) {
     return response.json();
   })
