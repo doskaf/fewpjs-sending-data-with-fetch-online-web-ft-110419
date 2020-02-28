@@ -21,7 +21,7 @@ function submitData(name, email) {
     document.querySelector("body").appendChild(h);
   })
   .catch(function(error) {
-    alert("Something went wrong!");
+    alert("Unauthorized Access");
     console.log(error.message);
   });
 }
