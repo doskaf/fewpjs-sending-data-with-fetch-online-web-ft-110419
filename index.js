@@ -18,6 +18,6 @@ function submitData(userName, userEmail) {
   .then(function(object) {
     let h = document.createElement("h1");
     h.innerText = object.id;
-    document.
+    document.querySelector("body").appendChild(h);
   })
 }
