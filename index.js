@@ -1,5 +1,3 @@
-let url = ;
-
 function submitData(userName, userEmail) {
   let configObj = {
     method: "POST",
