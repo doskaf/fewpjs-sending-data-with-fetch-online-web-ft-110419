@@ -13,4 +13,10 @@ let configObj = {
 
 function submitData(userName, userEmail) {
   return fetch(url, configObj)
+  .then(function(response) {
+    return response.json();
+  })
+  .then(function(object) {
+    
+  })
 }
