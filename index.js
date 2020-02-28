@@ -22,7 +22,7 @@ function submitData(name, email) {
   })
   .catch(function(error) {
     let h = document.createElement("H1").innerHTML = "Unauthorized Access";
-    document.body.appendChild(h);
+    document.querySelector("body").appendChild(h);
     alert("Unauthorized Access");
     console.log(error.message);
   });
