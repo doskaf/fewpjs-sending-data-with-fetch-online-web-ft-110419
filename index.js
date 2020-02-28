@@ -19,5 +19,10 @@ function submitData(userName, userEmail) {
     // let h = document.createElement("H1");
     // h.innerHTML = object.id;
     // document.querySelector("body").appendChild(h);
+    let body = document.querySelector("body")
+          let element = document.createElement('p')
+          element.innerHTML= object.id 
+          body.appendChild(element)
+        console.log(object);
   })
 }
