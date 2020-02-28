@@ -21,7 +21,8 @@ function submitData(name, email) {
     document.querySelector("body").appendChild(p);
   })
   .catch(function(error) {
-    let h = document.createElement("H1").innerHTML = "Unauthorized Access";
+    let h = document.createElement("H1");
+    h.innerHTML = "Unauthorized Access";
     document.querySelector("body").appendChild(h);
     alert("Unauthorized Access");
     console.log(error.message);
