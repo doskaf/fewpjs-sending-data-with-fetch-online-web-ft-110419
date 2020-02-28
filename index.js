@@ -19,5 +19,6 @@ function submitData(userName, userEmail) {
     // let h = document.createElement("h1");
     // h.textContent = object.id;
     // document.querySelector("body").appendChild(h);
+    console.log(object.id)
   })
 }
